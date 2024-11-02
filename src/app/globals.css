@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  html,
+  body {
+    /* background: #e0e7ff; */
+    background: #e2e8f0;
+    @apply dark:bg-trueGray-900;
+  }
+}
+
