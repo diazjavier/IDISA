@@ -76,7 +76,7 @@ export const Navbar = () => {
                           {item[0]}
                       </Link>
                     ))}
-                    <Link href="/contacts" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-900 rounded-md lg:ml-5">         
+                    <Link href="/contacts" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
                         Contacto
                     </Link>
                   </>

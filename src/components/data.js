@@ -30,6 +30,16 @@ const quienesSomos2 = {
   //  destinationText: "Conocenos",
 };
 
+const contactanos = {
+  reference: "contact",
+  preTitle: "Independencia científica y compromiso social",
+  title: "Ponete en contacto con nosotros",
+  desc: `Completá el formulario de contacto y envianos tu consulta, envianos un email o llamanos.
+          Estamos aquí para ayudarte a conocer más sobre nuestra labor y cómo colaboramos para mejorar la salud pública.`,
+  //  destination: "/about",
+  //  destinationText: "Conocenos",
+};
+
 const servicios = {
   //reference: "about",
   preTitle:
@@ -257,5 +267,6 @@ export {
   proyectosHeader,
   proyectos,
   noticiasHeader,
-  noticias
+  noticias,
+  contactanos
 };
