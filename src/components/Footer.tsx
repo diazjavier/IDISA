@@ -7,9 +7,9 @@ export function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
-    <div className="relative">
-      <Container>
-        <div className="flex justify-between max-w-screen-xl gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+    <div className="relative w-full p-4">
+
+        <div className="flex justify-between w-full gap-10 pt-10 mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
           <div className="lg:col-span-2">
             {/* Logo  */}
             <Link href="/">
@@ -120,7 +120,7 @@ export function Footer() {
             Glazestock
           </a>
         </div> */}
-      </Container>
+
       {/* Do not remove this */}
       {/* <Backlink /> */}
     </div>

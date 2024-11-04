@@ -235,6 +235,15 @@ const noticias = {
   data: [
     {
       icon: <NewspaperIcon />,
+      date: "Viernes 01/09/2024 12:32hs",
+      title:
+        "El impacto del calentamiento global en la salud pública: ¿Estamos preparados?",
+      desc: "Explora cómo el cambio climático está afectando la salud pública en Argentina y el mundo, desde el aumento de enfermedades respiratorias hasta la vulnerabilidad ante desastres naturales. Incluye recomendaciones basadas en investigaciones científicas.",
+      destination: "https://www.lanacion.com.ar/deportes/futbol/despues-del-desplante-marcelo-fue-despedido-de-fluminense-escribio-un-mensaje-y-ya-hay-sospechas-de-nid04112024/",
+    },
+    {
+      icon: <NewspaperIcon />,
+      date: "Lunes 28/10/2024 17:50hs",
       title:
         "El impacto del calentamiento global en la salud pública: ¿Estamos preparados?",
       desc: "Explora cómo el cambio climático está afectando la salud pública en Argentina y el mundo, desde el aumento de enfermedades respiratorias hasta la vulnerabilidad ante desastres naturales. Incluye recomendaciones basadas en investigaciones científicas.",
@@ -242,13 +251,7 @@ const noticias = {
     },
     {
       icon: <NewspaperIcon />,
-      title:
-        "El impacto del calentamiento global en la salud pública: ¿Estamos preparados?",
-      desc: "Explora cómo el cambio climático está afectando la salud pública en Argentina y el mundo, desde el aumento de enfermedades respiratorias hasta la vulnerabilidad ante desastres naturales. Incluye recomendaciones basadas en investigaciones científicas.",
-      destination: "/",
-    },
-    {
-      icon: <NewspaperIcon />,
+      date: "Martes 22/10/2024 09:34hs",
       title:
         "El impacto del calentamiento global en la salud pública: ¿Estamos preparados?",
       desc: "Explora cómo el cambio climático está afectando la salud pública en Argentina y el mundo, desde el aumento de enfermedades respiratorias hasta la vulnerabilidad ante desastres naturales. Incluye recomendaciones basadas en investigaciones científicas.",

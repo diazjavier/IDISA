@@ -1,14 +1,51 @@
-import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
+"use client"
 
+import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import { FaCheck, FaTimes } from "react-icons/fa";
+import { sendEmail } from "@/lib/brevo";
+import { Toaster, toast } from "sonner";
 import { Container } from "@/components/Container";
 import { contactanos } from "@/components/data";
 import SimpleSectionCenter from "@/components/SimpleSectionCenter";
-import { Cta } from "@/components/Cta";
+
+
 
 export default function Contacts() {
+
+async function onSubmitForm(event: any) {
+
+  event.preventDefault();
+  const nombre:string = event.target.nombre.value;
+  const mail:string = event.target.email.value;
+  const message:string = event.target.message.value;
+
+  if (!nombre || !mail || !message) {   
+      return toast.error("Ups!", {
+        description: "Para enviarnos un mensaje por favor complete todos los campos",
+        icon: <FaTimes color="red"/>
+      });
+    };
+    
+    await sendEmail(
+      {nombre: nombre,
+      mail: mail,
+      htmlContent:message}
+    );
+
+    event.target.nombre.value='';
+    event.target.email.value='';
+    event.target.message.value='';
+
+    return toast.success("Enviado!", {
+      description: "El mensaje se ha enviado correctamente", 
+      icon: <FaCheck color="green" />
+    });
+
+};
+
   return (
     <Container>
-      <div id="team" className="section relative pb-8">
+      <div id="team" className="section relative">
         <div className="container xl:max-w-6xl mx-auto px-4">
           <SimpleSectionCenter data={contactanos} />
           <div className="flex flex-wrap flex-row -mx-4 justify-center">
@@ -42,18 +79,16 @@ export default function Contacts() {
                 </div>
               </div>
               <div className="m-10 w-full sm:w-1/4">
-                <form>
+                {/* <form action={onSubmit} method="POST"> */}
+                <form className="flex flex-col" onSubmit={onSubmitForm}>
                 <h2 className="text-2xl mb-6 font-semibold dark:text-white text-center">
                   Envianos tu consulta
                 </h2>
-                  <input
-                    type="checkbox"
-                    id=""
-                    className="hidden display-none"
-                  ></input>
+
 
                   <div className="mb-5">
                     <input
+                      name="nombre"
                       type="text"
                       placeholder="Nombre"
                       autoComplete="false"
@@ -83,9 +118,8 @@ export default function Contacts() {
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    className="w-full py-4 font-semibold text-white bg-indigo-600 transition-colors rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
+                  <button type="submit"
+                    className="w-full py-4 font-semibold text-white bg-indigo-600 transition-colors rounded-md hover:bg-indigo-500    px-7 dark:bg-white dark:text-black "
                   >
                     Enviar
                   </button>
@@ -95,6 +129,9 @@ export default function Contacts() {
           </div>{" "}
         </div>
       </div>{" "}
+
+      <Toaster position="top-right" closeButton richColors/>
+
     </Container>
   );
 }

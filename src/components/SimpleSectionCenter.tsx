@@ -21,7 +21,7 @@ export default function SimpleSectionCenter(props: Readonly<SectionProps>) {
       )}
 
       {props.data.preTitle && (
-        <div className="text-center text-sm font-bold tracking-wider text-indigo-600 uppercase">
+        <div className="text-center text-sm font-bold tracking-wider text-indigo-800 uppercase">
           {props.data.preTitle}
         </div>
       )}
