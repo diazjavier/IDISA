@@ -20,8 +20,7 @@ async function onSubmitForm(event: any) {
   const message:string = event.target.message.value;
 
   if (!nombre || !mail || !message) { 
-      console.log(process.env.BREVO_API_KEY as string)  
-      return toast.error("Ups!", {
+       return toast.error("Ups!", {
         description: "Para enviarnos un mensaje por favor complete todos los campos.",
         icon: <FaTimes color="red"/>
       });
