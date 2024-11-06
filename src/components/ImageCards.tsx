@@ -1,4 +1,5 @@
 import { Container } from "./Container";
+import Image from "next/image";
 
 interface ImageCardsProps {
   data: {
@@ -16,10 +17,9 @@ export default function ImageCards(props: Readonly<ImageCardsProps>) {
         <a href={props.data.destination}>
           <div className="relative overflow-hidden rounded-xl">
             {props.data.img && (
-              <img
+              <Image
                 src={props.data.img}
                 alt="art cover"
-                loading="lazy"
                 width="1000"
                 height="667"
                 className="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"
