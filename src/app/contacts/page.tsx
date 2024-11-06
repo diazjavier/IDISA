@@ -127,7 +127,7 @@ async function onSubmitForm(event: any) {
                   </div>
 
                   <button type="submit"
-                    className="w-full py-4 font-semibold text-white bg-indigo-600 transition-colors rounded-md hover:bg-indigo-500    px-7 dark:bg-white dark:text-black "
+                    className="w-full py-4 font-semibold text-white bg-indigo-600 transition-colors rounded-md hover:bg-indigo-500 px-7"
                   >
                     Enviar
                   </button>
