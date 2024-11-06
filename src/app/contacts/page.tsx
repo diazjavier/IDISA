@@ -26,21 +26,29 @@ async function onSubmitForm(event: any) {
       });
     };
     
-    await sendEmail(
-      {nombre: nombre,
-      mail: mail,
-      htmlContent:message}
-    );
-
-    event.target.nombre.value='';
-    event.target.email.value='';
-    event.target.message.value='';
-
-    return toast.success("Enviado!", {
-      description: "El mensaje se ha enviado correctamente", 
-      icon: <FaCheck color="green" />
-    });
-
+    try{      
+      await sendEmail(
+        {nombre: nombre,
+          mail: mail,
+          htmlContent:message}
+        );
+        
+        event.target.nombre.value='';
+        event.target.email.value='';
+        event.target.message.value='';
+        
+        return toast.success("Enviado!", {
+          description: "El mensaje se ha enviado correctamente", 
+          icon: <FaCheck color="green" />
+        });
+      } catch {
+        console.error("A ver si se ve el BREVO_API_KEY: ")
+        return toast.error("Ups!", {
+          description: "Se produjo un error",
+          icon: <FaTimes color="red"/>
+        });
+      }
+        
 };
 
   return (
