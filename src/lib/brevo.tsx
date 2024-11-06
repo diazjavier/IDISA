@@ -22,7 +22,7 @@ export async function sendEmail({nombre, mail, htmlContent}: Params){
 
     const smtpEmail = new brevo.SendSmtpEmail();
     smtpEmail.subject = subject;
-    smtpEmail.to = [{email: "diazjavier10@yahoo.com.ar", name: "Javier"}, {email: "alejandromacchia100@gmail.com", name: "Alejandro Macchia"}];
+    smtpEmail.to = [{email: "diazjavier10@yahoo.com.ar", name: "Javier"}, {email: "alejandromacchia100@gmail.com", name: "Alejandro Macchia"}, {email: "diazjavier@hotmail.com", name: "Javier"}];
     smtpEmail.htmlContent = content;
     smtpEmail.sender = {email: "diazjavier@hotmail.com", name: "IDISA"};
     smtpEmail.replyTo = {email:mail, name:nombre};
