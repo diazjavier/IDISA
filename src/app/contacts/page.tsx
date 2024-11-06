@@ -19,7 +19,8 @@ async function onSubmitForm(event: any) {
   const mail:string = event.target.email.value;
   const message:string = event.target.message.value;
 
-  if (!nombre || !mail || !message) {   
+  if (!nombre || !mail || !message) { 
+      console.log(process.env.BREVO_API_KEY as string)  
       return toast.error("Ups!", {
         description: "Para enviarnos un mensaje por favor complete todos los campos.",
         icon: <FaTimes color="red"/>
@@ -42,7 +43,7 @@ async function onSubmitForm(event: any) {
           icon: <FaCheck color="green" />
         });
       } catch {
-        console.error("A ver si se ve el BREVO_API_KEY: ")
+        console.error(process.env.BREVO_API_KEY)
         return toast.error("Ups!", {
           description: "Se produjo un error",
           icon: <FaTimes color="red"/>

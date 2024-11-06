@@ -15,8 +15,10 @@ interface Params {
 }
 
 export async function sendEmail({nombre, mail, htmlContent}: Params){
-    
-    console.log( process.env.BREVO_API_KEY);
+    const brevoString = process.env.BREVO_API_KEY as string;
+
+        console.log("Entró a sendEmail");
+        console.log(brevoString);
 
     const subject:string = nombre + " ha enviado una consulta desde la página de IDISA";
     const content:string = "<h4>" + nombre + " ha hecho la siguiente consulta desde la página web de IDISA:</h4><br/><p>" + htmlContent + "</p>";
