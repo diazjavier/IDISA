@@ -21,7 +21,7 @@ async function onSubmitForm(event: any) {
 
   if (!nombre || !mail || !message) {   
       return toast.error("Ups!", {
-        description: "Para enviarnos un mensaje por favor complete todos los campos",
+        description: "Para enviarnos un mensaje por favor complete todos los campos.",
         icon: <FaTimes color="red"/>
       });
     };
