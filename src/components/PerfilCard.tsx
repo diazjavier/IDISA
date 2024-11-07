@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import PerfilModal from "@/components/PerfilModal";
 import { Container } from "./Container";
 
 interface PerfilProps {
   data: {
-    imagen?: string;
+    imagen?: any;
     nombre?: string;
     rol?: string;
     twitter?: string;
@@ -33,8 +34,10 @@ const [open, setOpen] = useState(false);
           className="relative overflow-hidden p-6"
           onClick={() => {setOpen(true)}}
         >
-          <img
+          <Image
             src={props.data.imagen}
+            width="150"
+            height="150"
             className="max-w-full h-[150px] mx-auto rounded-full"
             alt="Foto de perfil"
           />
