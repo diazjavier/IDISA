@@ -1,0 +1,2 @@
+//Ver todas las alternativas de colores que hay en /node_modules/tailwindcss/colors.js --> /node_modules/tailwindcss/lib/public/colors.js
+//Cambiando la variable colors.pageColorsXXX por la que se desee cambian todos los colores de la página

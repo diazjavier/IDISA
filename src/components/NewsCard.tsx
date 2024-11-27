@@ -18,7 +18,7 @@ export default function NewsCard(props: Readonly<NewsCardProps>) {
         <div className="flex flex-col items-start mt-4 space-x-3">
 
           <div className="flex flex-row">
-            <div className="flex items-center justify-center flex-shrink-0 mt-1 mx-2 bg-indigo-500 rounded-md w-11 h-11 ">
+            <div className="flex items-center justify-center flex-shrink-0 mt-1 mx-2 bg-colores-boton2 rounded-md w-11 h-11 ">
               {React.cloneElement(props.data.icon, {
                 className: "w-7 h-7 text-indigo-50",
               })}

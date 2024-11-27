@@ -21,13 +21,13 @@ export default function SimpleSectionCenter(props: Readonly<SectionProps>) {
       )}
 
       {props.data.preTitle && (
-        <div className="text-center text-sm font-bold tracking-wider text-indigo-800 uppercase">
+        <div className="text-center text-sm font-bold tracking-wider text-colores-titulo uppercase">
           {props.data.preTitle}
         </div>
       )}
 
       {props.data.title && (
-        <h2 className="text-center mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+        <h2 className="text-center mt-3 text-3xl font-bold leading-snug tracking-tight text-colores-tituloPrincipal lg:leading-tight lg:text-4xl dark:text-white">
           {props.data.title}
         </h2>
       )}
@@ -45,7 +45,7 @@ export default function SimpleSectionCenter(props: Readonly<SectionProps>) {
           href={props.data.destination}
           // target="_blank"
           rel="noopener"
-          className="w-[180px] h-[40px] px-8 py-2 mt-2 text-lg font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 rounded-md "
+          className="w-[180px] h-[40px] px-8 py-2 mt-2 text-lg font-medium text-center text-white bg-colores-boton2 hover:bg-colores-boton2Hover rounded-md "
         >
           {props.data.destinationText}
         </a>

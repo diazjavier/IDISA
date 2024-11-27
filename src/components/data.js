@@ -121,33 +121,43 @@ const about = {
         "https://www.linkedin.com/company/dablim-solu%C3%A7%C3%B5es-gr%C3%A1ficas/",
     },
     {
-      imagen: "/img/mautalen.jpg",
-      nombre: "Satiago Mautalén",
-      rol: "Secretario",
-      twitter: "https://x.com/realdonaldtrump?lang=en",
-      facebook: "https://www.facebook.com/DonaldTrump/",
-      instagram: "https://www.instagram.com/realdonaldtrump/?hl=en",
-      linkedin: "https://www.linkedin.com/in/donald-trump-jr-4454b862/",
-    },
-    {
-      imagen: "/img/ferrante.jpg",
-      nombre: "Daniel Ferrante",
-      rol: "Prosecretario",
-      twitter: "https://x.com/DaniFerrante15",
-      facebook: "https://es-la.facebook.com/public/Daniel-Ferrante",
-      instagram: "https://www.instagram.com/ferrantehdaniel/",
-      linkedin:
-        "https://www.linkedin.com/in/daniel-ferrante-1b24858a/?originalSubdomain=ar",
-    },
-    {
       imagen: "/img/baum.jpg",
       nombre: "Analia Baum",
-      rol: "Tesorera",
+      rol: "Secretaria",
       twitter: "https://x.com/anitabaum?lang=en",
       facebook: "https://es-la.facebook.com/public/Anal%C3%ADa-Baum",
       instagram: "https://www.instagram.com/analiabaum/",
       linkedin: "https://www.linkedin.com/in/analiabaum/?originalSubdomain=ar",
     },
+    {
+      imagen: "/img/casullo.jpg",
+      nombre: "Carolina Casullo",
+      rol: "Vocal",
+      twitter: "https://x.com/DaniFerrante15",
+      facebook: "https://es-la.facebook.com/public/Daniel-Ferrante",
+      instagram: "https://www.instagram.com/ferrantehdaniel/",
+      linkedin:
+        "https://www.linkedin.com/in/carolinacasullo/?originalSubdomain=ar",
+    },
+    {
+      imagen: "/img/mautalen.jpg",
+      nombre: "Satiago Mautalén",
+      rol: "Tesorero",
+      twitter: "https://x.com/realdonaldtrump?lang=en",
+      facebook: "https://www.facebook.com/DonaldTrump/",
+      instagram: "https://www.instagram.com/realdonaldtrump/?hl=en",
+      linkedin: "https://www.linkedin.com/in/donald-trump-jr-4454b862/",
+    },
+    // {
+    //   imagen: "/img/ferrante.jpg",
+    //   nombre: "Daniel Ferrante",
+    //   rol: "Prosecretario",
+    //   twitter: "https://x.com/DaniFerrante15",
+    //   facebook: "https://es-la.facebook.com/public/Daniel-Ferrante",
+    //   instagram: "https://www.instagram.com/ferrantehdaniel/",
+    //   linkedin:
+    //     "https://www.linkedin.com/in/daniel-ferrante-1b24858a/?originalSubdomain=ar",
+    // },
   ],
 };
 

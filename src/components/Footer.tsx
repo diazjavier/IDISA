@@ -7,16 +7,16 @@ export function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
-    <div className="relative w-full p-4">
+    <div className="relative w-full p-4 bg-colores-fondoFooter">
 
         <div className="flex justify-between w-full gap-10 pt-10 mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
           <div className="lg:col-span-2">
             {/* Logo  */}
             <Link href="/">
-              <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-900 dark:text-gray-100">
+              <span className="flex items-center space-x-2 text-2xl font-medium text-colores-fuenteLogoNavBar dark:text-gray-100">
                 <span>
                   <Image
-                    src="/img/Logo_IDISA_4.jpg"
+                    src="/img/Logo_IDISA_6.jpg"
                     width="32"
                     alt="N"
                     height="32"
@@ -27,7 +27,7 @@ export function Footer() {
               </span>
             </Link>
 
-            <div className="italic mt-2 text-base font-bold leading-snug tracking-tight text-indigo-900 lg:leading-tight xl:leading-tight dark:text-white">
+            <div className="italic mt-2 text-base font-bold leading-snug tracking-tight text-colores-tituloPrincipal lg:leading-tight xl:leading-tight dark:text-white">
               Independencia científica y compromiso social
             </div>
 
@@ -75,9 +75,9 @@ export function Footer() {
               ))}
             </div>
           </div> */}
-          <div className="text-base font-bold leading-snug tracking-tight text-indigo-900 lg:leading-tight xl:leading-tight dark:text-white">
+          <div className="text-base font-bold leading-snug tracking-tight text-colores-tituloPrincipal lg:leading-tight xl:leading-tight dark:text-white">
             <div className="justify-center items-center text-center">Seguinos</div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
+            <div className="flex mt-5 space-x-5 text-colores-fuenteNavBar dark:text-gray-500">
               <a
                 href="https://twitter.com/web3templates"
                 target="_blank"

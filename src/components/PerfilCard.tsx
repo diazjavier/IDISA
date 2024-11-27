@@ -23,7 +23,7 @@ const data = { props };
 const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
+    <div className="flex-shrink shadow-xl rounded-3xl max-w-full px-4 w-2/3 mt-1 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
       <div
         className="relative rounded-3xl overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
         data-wow-duration="1s"

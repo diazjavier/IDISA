@@ -8,13 +8,13 @@ export const Hero = () => {
       <Container className="flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl m-8">
-            <h1 className="text-6xl font-bold leading-snug tracking-tight text-indigo-800 lg:text-6xl lg:leading-tight xl:text-8xl xl:leading-tight dark:text-white">
+            <h1 className="text-6xl font-bold leading-snug tracking-tight text-colores-tituloGrande lg:text-6xl lg:leading-tight xl:text-8xl xl:leading-tight dark:text-white">
               IDISA
             </h1>
-            <h3 className="italic text-base font-bold leading-snug tracking-tight text-indigo-800 lg:leading-tight xl:leading-tight dark:text-white">
+            <h3 className="italic text-base font-bold leading-snug tracking-tight text-colores-titulo lg:leading-tight xl:leading-tight dark:text-white">
               Independencia científica y compromiso social
             </h3>
-            <p className="text-xl font-bold leading-snug tracking-tight text-gray-800 lg:text-xl lg:leading-tight xl:text-xl xl:leading-tight dark:text-white mt-4">
+            <p className="text-xl font-bold leading-snug tracking-tight text-colores-tituloPrincipal lg:text-xl lg:leading-tight xl:text-xl xl:leading-tight dark:text-white mt-4">
               Investigamos en forma independiente, para mejorar la salud pública
               de forma transparente y equitativa
             </p>
@@ -31,7 +31,7 @@ export const Hero = () => {
                 href="/projects"
                 // target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 rounded-md "
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-colores-boton2 hover:bg-colores-boton2Hover rounded-md "
               >
                 Conocé más sobre nuestros proyectos 
               </a>
@@ -39,7 +39,7 @@ export const Hero = () => {
                 href="/news"
                 // target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 rounded-md "
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-colores-boton2 hover:bg-colores-boton2Hover rounded-md "
               >
                 Descargá nuestros estudios más recientes 
               </a>              
