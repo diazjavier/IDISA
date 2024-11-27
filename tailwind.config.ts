@@ -19,8 +19,24 @@ const config: Config = {
     extend: {
       colors: {
         trueGray: colors.neutral,
-        colores: colorsConfig, 
+        //colores: colorsConfig, 
+        //Nueva configuración de colores 27/11/2024
+        colores: {
         fondoNavBar: "#a51c30",
+        fuenteLogoNavBar: "#d1d5db",
+        fuenteNavBar: "#ffffff", 
+        fuenteNavBarHover: "#e4bbc1", 
+        fondoNavBarFocus: "#94998e",
+        boton: "#888d81",
+        botonHover: "#94998e",
+        boton2: "#a51c30",
+        boton2Hover: "#4c0519",
+        tituloGrande: "#881337",
+        titulo: "#5A595A",
+        tituloPrincipal: "#111827",
+        fondoComun: "#FFFFFF",
+        fondoFooter: "#888d81",
+        },
       },
     },
     fontFamily: {
