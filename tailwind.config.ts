@@ -20,6 +20,7 @@ const config: Config = {
       colors: {
         trueGray: colors.neutral,
         colores: colorsConfig, 
+        fondoNavBar: "#a51c30",
       },
     },
     fontFamily: {
