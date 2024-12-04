@@ -8,6 +8,7 @@ export const Navbar = () => {
   const navigation = [
     ["Inicio", "/"],
     ["Quienes somos", "/about"],
+    ["Areas", "/areas"],
     ["Servicios", "/services"],
     ["Proyectos", "/projects"],
     ["Noticias", "/news"],

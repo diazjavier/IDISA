@@ -40,20 +40,10 @@ const contactanos = {
   //  destinationText: "Conocenos",
 };
 
-const servicios = {
-  //reference: "about",
-  preTitle:
-    "Promovemos investigaciones imparciales para políticas de salud más justas",
-  title: "Nuestras áreas de Investigación",
-  desc: "En IDISA nos enfocamos en proyectos de investigación que impacten directamente en la mejora de las políticas de salud pública. Algunas de nuestras áreas de investigación incluyen:",
-  //  destination: "/about",
-  //  destinationText: "Conocenos",
-};
-
 const proyectosHeader = {
   //reference: "about",
   preTitle: "Investigaciones que impactan en la vida de las personas",
-  title: "Nuestros Proyectos",
+  title: "Nuestros proyectos",
   desc: "En IDISA, cada proyecto de investigación tiene como objetivo generar cambios reales en la salud pública. Aquí te presentamos algunos de nuestros estudios más recientes que ya están generando impacto",
   //  destination: "/about",
   //  destinationText: "Conocenos",
@@ -79,6 +69,45 @@ const areas = {
       text: "Analizamos cómo mejorar la eficiencia en los recursos sanitarios para reducir los desperdicios y optimizar las intervenciones.",
       destination: "/",
     },
+  ],
+};
+
+const serviciosHeader = {
+  //reference: "about",
+  preTitle:
+    "Proveemos servicios de calidad para mejorar las políticas de salud",
+  title: "Nuestros servicios",
+  desc: "Desde IDISA ofrecemos diferentes servicios con el objetivo de mejorar las políticas de salud pública en todos sus aspectos. Nuestros profesionales altamente capacitados cuentan con gran experiencia en la gestión de instituciones de salud tanto públicas como privadas lo que asegura la calidad del servicio ofrecido como el valor agregado del mismo",
+  //  destination: "/about",
+  //  destinationText: "Conocenos",
+};
+
+const servicios = {
+  data: [
+    {
+      img: "/img/ONG1.jpg",
+      title: "Colaboraciones con ONG",
+      text: "Apoyamos la creación de políticas basadas en evidencia científica que promuevan la accesibilidad y universalidad de la asistencia sanitaria.",
+      destination: "/",
+    },
+    {
+      img: "/img/app1.jpg",
+      title: "Aplicaciones",
+      text: "Realizamos estudios sobre la prevención de enfermedades y el acceso a tratamientos de calidad.",
+      destination: "/",
+    },
+    {
+      img: "/img/consultoria1.jpg",
+      title: "Consultoría",
+      text: "Analizamos cómo mejorar la eficiencia en los recursos sanitarios para reducir los desperdicios y optimizar las intervenciones.",
+      destination: "/",
+    },
+    {
+      img: "/img/educacion1.jpg",
+      title: "Educación",
+      text: "Analizamos cómo mejorar la eficiencia en los recursos sanitarios para reducir los desperdicios y optimizar las intervenciones.",
+      destination: "/",
+    },    
   ],
 };
 
@@ -159,6 +188,16 @@ const about = {
     //     "https://www.linkedin.com/in/daniel-ferrante-1b24858a/?originalSubdomain=ar",
     // },
   ],
+};
+
+const areasHeader = {
+  //reference: "about",
+  preTitle:
+    "Promovemos investigaciones imparciales para políticas de salud más justas",
+  title: "Nuestras áreas de investigación",
+  desc: "En IDISA nos enfocamos en proyectos de investigación que impacten directamente en la mejora de las políticas de salud pública. Algunas de nuestras áreas de investigación incluyen:",
+  //  destination: "/about",
+  //  destinationText: "Conocenos",
 };
 
 const proyectos = {
@@ -275,7 +314,9 @@ export {
   quienesSomos2,
   actividades,
   about,
+  serviciosHeader,
   servicios,
+  areasHeader,
   areas,
   proyectosHeader,
   proyectos,
