@@ -148,6 +148,9 @@ const about = {
       instagram: "https://www.instagram.com/elonmusk__official__/reels/?hl=en",
       linkedin:
         "https://www.linkedin.com/company/dablim-solu%C3%A7%C3%B5es-gr%C3%A1ficas/",
+      miniBio: `Subsecretaría de Planificación Sanitaria. Ministerio de Salud de la Ciudad de Buenos Aires,Argentina.
+      Investigador en Fundación GESICA.
+      Doctor en Medicina`,  
     },
     {
       imagen: "/img/baum.jpg",
@@ -157,6 +160,10 @@ const about = {
       facebook: "https://es-la.facebook.com/public/Anal%C3%ADa-Baum",
       instagram: "https://www.instagram.com/analiabaum/",
       linkedin: "https://www.linkedin.com/in/analiabaum/?originalSubdomain=ar",
+      miniBio: `Especialista en Transformación Digital en Salud. 
+      Médica egresada de la Universidad de Buenos Aires. 
+      Especialista en Informática en Salud y Magister en Educación para Profesionales de la Salud. 
+      Profesora univeritaria en Salud Digital. Más de 20 años de experiencia asesorando proyectos de Transformación Digital en ámbitos públicos y privados.`,
     },
     {
       imagen: "/img/casullo.jpg",
@@ -167,7 +174,9 @@ const about = {
       instagram: "https://www.instagram.com/ferrantehdaniel/",
       linkedin:
         "https://www.linkedin.com/in/carolinacasullo/?originalSubdomain=ar",
-    },
+      miniBio: `Especialista en Diseño, Planificación, Gestión y Evaluación de Proyectos de Salud.
+      Organismos Multilaterales de Crédito. Gestión del Cambio. Género y Liderazgo`,
+      },
     {
       imagen: "/img/mautalen.jpg",
       nombre: "Satiago Mautalén",
@@ -176,6 +185,11 @@ const about = {
       facebook: "https://www.facebook.com/DonaldTrump/",
       instagram: "https://www.instagram.com/realdonaldtrump/?hl=en",
       linkedin: "https://www.linkedin.com/in/donald-trump-jr-4454b862/",
+      miniBio: `CEO Mautalen Salud & Investigación 
+      30 años de experiencia en desarrollo y administración financiera en diversas empresas locales e internacionales. 
+      MBA HEC Paris 
+      Posgrado negocios internacionales UC Berkeley - UCLA 
+      Lic. Administración de empresas UBA`,
     },
     // {
     //   imagen: "/img/ferrante.jpg",

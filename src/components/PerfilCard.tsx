@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import PerfilModal from "@/components/PerfilModal";
-import { Container } from "./Container";
+import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 
 interface PerfilProps {
   data: {
@@ -14,13 +13,22 @@ interface PerfilProps {
     facebook?: string;
     instagram?: string;
     linkedin?: string;
+    miniBio?: string;
   };
 }
 
 export default function PerfilCard(props: Readonly<PerfilProps>) {
 
-const data = { props };
-const [open, setOpen] = useState(false);
+
+  const [open, setOpen] = useState(false);
+
+  function openTrue() {
+    setOpen(true);
+  }
+
+  function openFalse() {
+    setOpen(false);
+  }
 
   return (
     <div className="flex-shrink shadow-xl rounded-3xl max-w-full px-4 w-2/3 mt-1 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
@@ -31,8 +39,8 @@ const [open, setOpen] = useState(false);
         {/* <!-- team block --> */}
 
         <div
-          className="relative overflow-hidden p-6"
-          onClick={() => {setOpen(true)}}
+          className="relative overflow-hidden p-6 hover:cursor-pointer"
+          onClick={openTrue}
         >
           <Image
             src={props.data.imagen}
@@ -158,11 +166,42 @@ const [open, setOpen] = useState(false);
         </div>
       </div>{" "}
       {/* <!-- end team block --> */}
-          {/* <PerfilModal open={open} >
-              <Container>
-                <div className="h-[200px] w-[200px] bg-background justify-center items-center text-center">Los Childrennn</div>
-              </Container>
-            </PerfilModal> */}
+      {/* <!-- MODAL --> */}
+      <Dialog
+        open={open}
+        as="div"
+        className="relative z-10 focus:outline-none"
+        onClose={openFalse}
+      >
+        <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-md rounded-xl bg-white shadow-xl border duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+            >
+              <img
+                src={props.data.imagen}
+                className="max-w-full h-[100px] mx-auto mt-6 mb-4 rounded-xl"
+                alt="Foto de perfil"
+              />
+              <DialogTitle as="h1" className="text-2xl font-bold px-4 py-2 text-center">
+                {props.data.nombre}
+              </DialogTitle>
+              <p className="text-sm/6 px-4 py-2">
+                {props.data.miniBio}
+              </p>
+              <div className="mt-4 text-right p-4">
+                <Button
+                  className="inline-flex items-center gap-2 rounded-md text-white bg-colores-boton hover:bg-colores-botonHover py-1.5 px-3"
+                  onClick={openFalse}
+                >
+                  Cerrar
+                </Button>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
     </div>
   );
 }
