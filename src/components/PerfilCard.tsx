@@ -178,9 +178,11 @@ export default function PerfilCard(props: Readonly<PerfilProps>) {
             <DialogPanel
               className="w-full max-w-md rounded-xl bg-white shadow-xl border duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
             >
-              <img
+              <Image
                 src={props.data.imagen}
-                className="max-w-full h-[100px] mx-auto mt-6 mb-4 rounded-xl"
+                width="100"
+                height="100"
+                className="max-w-full mx-auto mt-6 mb-4 rounded-xl"
                 alt="Foto de perfil"
               />
               <DialogTitle as="h1" className="text-2xl font-bold px-4 py-2 text-center">
