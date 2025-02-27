@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# backup de data.js
+src/components/data copy.js

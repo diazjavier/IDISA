@@ -11,6 +11,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 import grupo_1 from "../../public/img/grupo_1.jpg";
+import { Children } from "react";
 
 const quienesSomos = {
   reference: "about",
@@ -74,8 +75,7 @@ const areas = {
 
 const serviciosHeader = {
   //reference: "about",
-  preTitle:
-    "Proveemos servicios de calidad para mejorar las políticas de salud",
+  preTitle: "Proveemos servicios de calidad para mejorar las políticas de salud",
   title: "Nuestros servicios",
   desc: "Desde IDISA ofrecemos diferentes servicios con el objetivo de mejorar las políticas de salud pública en todos sus aspectos. Nuestros profesionales altamente capacitados cuentan con gran experiencia en la gestión de instituciones de salud tanto públicas como privadas lo que asegura la calidad del servicio ofrecido como el valor agregado del mismo",
   //  destination: "/about",
@@ -100,14 +100,91 @@ const servicios = {
       img: "/img/consultoria1.jpg",
       title: "Consultoría",
       text: "Analizamos cómo mejorar la eficiencia en los recursos sanitarios para reducir los desperdicios y optimizar las intervenciones.",
-      destination: "/",
+      destination: "./services/2",
+      content: {
+        header: {
+          //reference: undefined,
+          preTitle: "Proveemos servicios de calidad para mejorar las políticas de salud",
+          title: "Servicio de Consultoría",
+          desc: "Analizamos cómo mejorar la eficiencia en los recursos sanitarios para reducir los desperdicios y optimizar las intervenciones.",
+          //destination: undefined,
+          //destinationText: undefined,
+          //children: undefined,
+        },
+        bottomLink: {
+          destination: "/services",
+          destinationText: "Conozca todos nuestros servicios",
+        },
+        data: [
+          {
+            sectionTitle:
+              "Consultoría en epidemiología y gestión de servicios de salud",
+            data: [
+              {
+                title: "Análisis de datos",
+                text: "Análisis de datos epidemiológicos, clínicos y administrativos sanitarios",
+              },
+              {
+                title: "Diseño de estudios",
+                text: "Asesoramiento e implementación de estudios iniciados por investigadores y/o datos reales útiles para gestores de servicios de salud",
+              },
+              {
+                title: "Evaluación de intervenciones",
+                text: "Evaluación de indicadores de proceso y resultado, con foco en rediseño de servicios de salud basados en valor",
+              },
+              {
+                title: "Modelización",
+                text: "Impacto de modificaciones e intervenciones en políticas sanitarias y/o modelos de provisión de servicios",
+              },
+              {
+                title: "Asesoramiento en políticas",
+                text: "Basándonos en evidencia de la vida real, revisión de mejores prácticas locales-globales y revisiones sistemáticas de la literatura, y análisis de las organizaciones en contextos reales, elaboramos recomendaciones para implementación de políticas públicas o para organizaciones de salud en pos de la calidad y eficiencia",
+              },
+            ],
+          },
+          {
+            sectionTitle: "Consultoría para el área Economía de la Salud",
+            data: [
+              {
+                title: "Análisis de costo-efectividad",
+                text: "Evaluación de la relación entre los costos y los efectos ajustados a datos primarios y secundarios",
+              },
+              {
+                title: "Modelado económico",
+                text: "Desarrollo de modelos para simular el impacto financiero de intervenciones y/o políticas sectoriales o públicas de salud , aportando insumos claves para toma de decisión en inversiones",
+              },
+              {
+                title: "Evaluación de tecnologías sanitarias",
+                text: "Análisis de tecnologías sanitarias nuevas o preexistentes que orienten la toma de decisiones incorporando la perspectiva de valor",
+              },
+              {
+                title: "Análisis de costos",
+                text: "Estimación de los costos directos e indirectos asociados con enfermedades, tratamientos y prevención, identificando oportunidades de eficiencia",
+              },
+              {
+                title: "Análisis de mercado",
+                text: "Análisis de precios, evolución de sectores involucrados en la provisión de servicios e insumos críticos para las organizaciones de salud",
+              },
+            ],
+          },
+          {
+            sectionTitle: "Consultorías de procesos y sistemas de información",
+            data: [
+              {
+                title: "Asesoramiento",
+                text: "Asesoramiento en proyectos de análisis funcional planificación e implementación de sistemas de información en salud, en consonancia con el plan estratégico de la organización",
+              },
+            ],
+          },
+        ],
+      },
     },
     {
       img: "/img/educacion1.jpg",
       title: "Educación",
       text: "Analizamos cómo mejorar la eficiencia en los recursos sanitarios para reducir los desperdicios y optimizar las intervenciones.",
       destination: "/",
-    },    
+    },
   ],
 };
 
@@ -150,7 +227,7 @@ const about = {
         "https://www.linkedin.com/company/dablim-solu%C3%A7%C3%B5es-gr%C3%A1ficas/",
       miniBio: `Subsecretaría de Planificación Sanitaria. Ministerio de Salud de la Ciudad de Buenos Aires,Argentina.
       Investigador en Fundación GESICA.
-      Doctor en Medicina`,  
+      Doctor en Medicina`,
     },
     {
       imagen: "/img/baum.jpg",
@@ -176,7 +253,7 @@ const about = {
         "https://www.linkedin.com/in/carolinacasullo/?originalSubdomain=ar",
       miniBio: `Especialista en Diseño, Planificación, Gestión y Evaluación de Proyectos de Salud.
       Organismos Multilaterales de Crédito. Gestión del Cambio. Género y Liderazgo`,
-      },
+    },
     {
       imagen: "/img/mautalen.jpg",
       nombre: "Satiago Mautalén",
@@ -302,7 +379,8 @@ const noticias = {
       title:
         "El impacto del calentamiento global en la salud pública: ¿Estamos preparados?",
       desc: "Explora cómo el cambio climático está afectando la salud pública en Argentina y el mundo, desde el aumento de enfermedades respiratorias hasta la vulnerabilidad ante desastres naturales. Incluye recomendaciones basadas en investigaciones científicas.",
-      destination: "https://www.lanacion.com.ar/deportes/futbol/despues-del-desplante-marcelo-fue-despedido-de-fluminense-escribio-un-mensaje-y-ya-hay-sospechas-de-nid04112024/",
+      destination:
+        "https://www.lanacion.com.ar/deportes/futbol/despues-del-desplante-marcelo-fue-despedido-de-fluminense-escribio-un-mensaje-y-ya-hay-sospechas-de-nid04112024/",
     },
     {
       icon: <NewspaperIcon />,
@@ -336,5 +414,5 @@ export {
   proyectos,
   noticiasHeader,
   noticias,
-  contactanos
+  contactanos,
 };
